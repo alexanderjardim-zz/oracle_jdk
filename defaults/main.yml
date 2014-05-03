@@ -1,0 +1,6 @@
+---
+# defaults file for oracle_jdk
+oracle_jdk_download_dir: '/tmp'
+oracle_jdk_package: 'jdk-7u51-linux-x64.tar.gz'
+oracle_jdk_version: '1.7.0_51'
+oracle_jdk_instalation_dir: '~/jdk'
