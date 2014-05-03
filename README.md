@@ -11,7 +11,10 @@ wget (a no brainer on modern Linux distributions)
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+oracle_jdk_download_dir is the download path on the control machine that will be used. Defaults to '/tmp'
+oracle_jdk_package is the jdk package name to be downloaded. Defaults to 'jdk-7u51-linux-x64.tar.gz'
+oracle_jdk_version is jdk version name to be instlalled. It will be used to create the instalation file path. Defaults to '1.7.0_51'
+oracle_jdk_instalation_dir is the instalation prefix that will be used at the hosts. Defaults to '~/jdk'
 
 Dependencies
 ------------
