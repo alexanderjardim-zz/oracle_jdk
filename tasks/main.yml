@@ -3,7 +3,6 @@
   local_action: >
     command wget -N -P "{{oracle_jdk_download_dir}}" --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/7u51-b13/{{oracle_jdk_package}}
     creates="{{oracle_jdk_download_dir}}/{{oracle_jdk_package}}"
-    sha256sum=77367c3ef36e0930bf3089fb41824f4b8cf55dcc8f43cce0868f7687a474f55c
   tags: download
 
 - name: "{{oracle_jdk_instalation_dir}} must exist"
