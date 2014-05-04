@@ -3,7 +3,12 @@ Role Name
 
 Oracle Jdk ansible role. Completely independent from package manager, so you can use it on any linux distribution. It doesn't require root or sudo permission to run.
 
-All my roles make the assumption that host machines don't have internet connection, as this is the standard behavior of production machines in most companies. So, all the necessary dependencies will be downloaded to the control machine and after that pushed to the host machines. Keep in mind that you will need disk space for these downloads on your control machine.
+You must keep in my mind three things when I write my roles:
+
+1. All my roles make the assumption that host machines don't have internet connection, as this is the standard behavior of production machines in most companies. So, all the necessary dependencies will be downloaded to the control machine and after that pushed to the host machines. Keep in mind that you will need disk space for these downloads on your control machine.
+1. I try to not use any package manager, at all. This way, you will not depend on more than one maintainer for the same software (the software original writer, and the package management team). Going this way, it is your choice to install using root or not. Which I always advise to don't use, if you can.
+1. I try to keep all of my roles free from sudo or root access. If you wan't to use root, it is choice and not an specific demand, and I will keep this way as long as I can.
+
 
 Requirements
 ------------
