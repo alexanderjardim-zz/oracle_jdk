@@ -16,7 +16,7 @@ Role Variables
 - oracle_jdk_download_dir: download path on the control machine that will be used. Defaults to '/tmp'
 - oracle_jdk_package: jdk package name to be downloaded. Defaults to 'jdk-7u51-linux-x64.tar.gz'
 - oracle_jdk_version: jdk version name to be instlalled. It will be used to create the instalation file path. Defaults to '1.7.0_51'
-- oracle_jdk_instalation_di: instalation prefix that will be used at the hosts. Defaults to '~/jdk'
+- oracle_jdk_instalation_dir: instalation prefix that will be used at the hosts. Defaults to '/home/vagrant/jdk'
 
 Dependencies
 ------------
@@ -28,7 +28,7 @@ Example Playbook
 ```
     - hosts: all
       roles:
-         - { role: alexanderjardim.oracle_jdk }
+         - { role: alexanderjardim.oracle_jdk, oracle_jdk_instalation_dir: '/your/jvm/path' }
 ```
 License
 -------
