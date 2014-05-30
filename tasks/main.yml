@@ -2,7 +2,6 @@
 - name: download Oracle JDK7 to host
   local_action: >
     command wget -N -P "{{oracle_jdk_download_dir}}" --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/7u51-b13/{{oracle_jdk_package}}
-  serial: 1
   tags: download
 
 - name: "{{oracle_jdk_instalation_dir}} must exist"
