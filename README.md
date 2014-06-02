@@ -22,7 +22,7 @@ Role Variables
 - **oracle_jdk_package**: jdk package name to be downloaded. Defaults to *'jdk-7u60-linux-x64.tar.gz'*
 - **oracle_jdk_package_subdir**: sub-directory for Oracle otn-pub folder. Related to jdk_package. Defaults to *'7u60-b19'*
 - **oracle_jdk_version**: jdk version name to be installed. It will be used to create the installation file path. Defaults to *'1.7.0_60'*
-- **oracle_jdk_instalation_dir**: installation prefix that will be used at the hosts. Defaults to *'/home/vagrant/jdk'*
+- **oracle_jdk_installation_dir**: installation prefix that will be used at the hosts. Defaults to *'/home/vagrant/jdk'*
 
 Dependencies
 ------------
@@ -34,7 +34,7 @@ Example Playbook
 ```
     - hosts: all
       roles:
-         - { role: alexanderjardim.oracle_jdk, oracle_jdk_instalation_dir: '/your/jvm/path' }
+         - { role: alexanderjardim.oracle_jdk, oracle_jdk_installation_dir: '/your/jvm/path' }
 ```
 License
 -------
